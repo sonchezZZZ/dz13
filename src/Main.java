@@ -10,7 +10,7 @@ public class Main {
         }
 //        second task
         int computation = 0;
-        int secondNumber =0;
+        int secondNumber = 0;
         Random random = new Random();
         int[] mass = new int[10];
         try {
@@ -25,8 +25,7 @@ public class Main {
             try {
                 if (ex.getMessage().equals("/ by zero")) {
                     throw new DivideByZeroException("Деление на 0");
-                }
-                else{
+                } else {
                     System.out.println("ArithmeticException");
                     computation = mass[random.nextInt(5)] / mass[random.nextInt(5)];
                     System.out.println("second try: " + computation);
