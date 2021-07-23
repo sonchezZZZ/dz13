@@ -44,7 +44,7 @@ public class Main {
     }
 
     //    method for first task
-    public static void checkString(String firstLine, String secondLine) throws Exception {
+    public static void checkString(String firstLine, String secondLine) throws IllegalArgumentException {
         char firstChar = firstLine.charAt(firstLine.length() - 1);
         char secondChar = secondLine.charAt(secondLine.length() - 1);
         if (firstChar == secondChar) {
